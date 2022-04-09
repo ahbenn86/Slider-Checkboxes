@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+	/* Universal Selector. Applies this code to everything. */
+
+	box-sizing: border-box; /* If we apply any padding or border to an element, it doesn't effect the width */
+}
+body {
+	font-family: "Roboto", sans-serif;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	margin: 0;
+}
