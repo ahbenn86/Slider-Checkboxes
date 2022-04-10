@@ -5,6 +5,15 @@
 }
 
 body {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(171, 111, 43, 0.8),
+      rgba(172, 93, 43, 0.8)
+    ),
+    url("https://images.unsplash.com/photo-1596956470007-2bf6095e7e16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=729&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   font-family: "Roboto", sans-serif;
   flex-direction: column;
   align-items: center;
@@ -13,6 +22,7 @@ body {
   overflow: hidden;
   display: flex;
   margin: 0;
+  color: white;
 }
 
 .toggle-container {
@@ -28,7 +38,7 @@ body {
 
 .label {
   position: relative;
-  background-color: #d0d0d0;
+  background-color: #000000;
   border-radius: 50px;
   cursor: pointer;
   display: inline-block;
@@ -37,8 +47,16 @@ body {
   height: 40px;
 }
 
-.toggle:checked + .label {
-  background-color: #8e44ad;
+.toggle:checked + .label#ketchup {
+  background-color: #d70000;
+}
+
+.toggle:checked + .label#mustard {
+  background-color: #ffc800;
+}
+
+.toggle:checked + .label#mayo {
+  background-color: #ffffff;
 }
 
 .ball {
